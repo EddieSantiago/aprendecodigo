@@ -187,6 +187,80 @@ a.active,a:hover{
 	font-size: 25px;	
 }
 }
+.btnacercademi{
+  display: block;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgb(0,141,235);
+  background-color: #fafafa;
+  border-radius: 6px;
+  color: rgb(0, 141, 235);
+  cursor: pointer;
+  margin: 50px auto;
+  transition: all .25s;
+  z-index: 1;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.btnacercademi:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background-image: linear-gradient(to right,
+    rgb(23,228,243), rgb(0,141,235));
+  transition: all .25s;
+  z-index: -1;
+}
+.btnacercademi:hover{
+  border: 1px solid transparent;
+  color: #fff;
+}
+.btnacercademi:hover:before{
+  height: 100%;
+}
+.btncontactame{
+  display: block;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgb(0,141,235);
+  background-color: #fafafa;
+  border-radius: 6px;
+  color: rgb(0, 141, 235);
+  cursor: pointer;
+  margin: 50px auto;
+  transition: all .25s;
+  z-index: 1;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.btncontactame:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background-image: linear-gradient(to right,
+    rgb(23,228,243), rgb(0,141,235));
+  transition: all .25s;
+  z-index: -1;
+}
+.btncontactame:hover{
+  border: 1px solid transparent;
+  color: #fff;
+}
+.btncontactame:hover:before{
+  height: 100%;
+}
 input[type="radio"]{
   display: none;
 }
@@ -280,6 +354,8 @@ input[type="radio"]{
 [value="CSS"]:checked ~ .posts .post:not([data-category~="CSS"]),
 [value="HTML"]:checked ~ .posts .post:not([data-category~="HTML"]),
 [value="JS"]:checked ~ .posts .post:not([data-category~="JS"]),
+[value="TUTORIALES"]:checked ~ .posts .post:not([data-category~="TUTORIALES"]),
+[value="PSEUDOCODIGO"]:checked ~ .posts .post:not([data-category~="PSEUDOCODIGO"]),
 [value="JAVA"]:checked ~ .posts .post:not([data-category~="JAVA"]){
   display: none;
 }
@@ -287,6 +363,8 @@ input[type="radio"]{
 [value="CSS"]:checked ~ .container-category [for="CSS"],
 [value="JS"]:checked ~ .container-category [for="JS"],
 [value="JAVA"]:checked ~ .container-category [for="JAVA"],
+[value="TUTORIALES"]:checked ~ .container-category [for="TUTORIALES"],
+[value="PSEUDOCODIGO"]:checked ~ .container-category [for="PSEUDOCODIGO"],
 [value="TODOS"]:checked ~ .container-category [for="TODOS"]{
   background: #46a2fd;
   color: #fff;
